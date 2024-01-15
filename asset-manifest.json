@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.0e76c3d3.js",
+    "main.js": "/static/js/main.9f96a84b.js",
     "static/js/787.88efabbe.chunk.js": "/static/js/787.88efabbe.chunk.js",
     "static/media/BD_sem3_MME8120_en_sanda_2023_8353.pdf": "/static/media/BD_sem3_MME8120_en_sanda_2023_8353.9389c6a91f262505801c.pdf",
     "static/media/IG_sem4_MLG5015_de_sanda_2020_5069.pdf": "/static/media/IG_sem4_MLG5015_de_sanda_2020_5069.91218d03f7d06cb3088b.pdf",
@@ -9,11 +9,11 @@
     "static/media/UBB_logo_small.png": "/static/media/UBB_logo_small.bc1110f5a8a2df38a595.png",
     "index.html": "/index.html",
     "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.0e76c3d3.js.map": "/static/js/main.0e76c3d3.js.map",
+    "main.9f96a84b.js.map": "/static/js/main.9f96a84b.js.map",
     "787.88efabbe.chunk.js.map": "/static/js/787.88efabbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.0e76c3d3.js"
+    "static/js/main.9f96a84b.js"
   ]
 }
