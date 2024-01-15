@@ -19,7 +19,7 @@ export default function Teaching() {
   return (
     <Card overflow="hidden" variant="outline">
       <CardHeader>
-        <Heading size="xl">Current Teaching</Heading>
+        <Heading size="2xl">Current Teaching</Heading>
       </CardHeader>
 
       <CardBody>
@@ -32,7 +32,7 @@ export default function Teaching() {
             <CardBody>
               <Stack divider={<StackDivider />} spacing="4">
                 <Box>
-                  <Heading size="xs" textTransform="uppercase" mb={5}>
+                  <Heading size="md" textTransform="uppercase" mb={5}>
                     Summary
                   </Heading>
                   <UnorderedList spacing={2}>
@@ -52,7 +52,7 @@ export default function Teaching() {
                   </UnorderedList>
                 </Box>
                 <Box>
-                  <Heading size="xs" textTransform="uppercase">
+                  <Heading size="md" textTransform="uppercase">
                     Lecture
                   </Heading>
                   <Text pt="2" fontSize="sm">
@@ -60,7 +60,7 @@ export default function Teaching() {
                   </Text>
                 </Box>
                 <Box>
-                  <Heading size="xs" textTransform="uppercase">
+                  <Heading size="md" textTransform="uppercase">
                     Seminar
                   </Heading>
                   <Text pt="2" fontSize="sm">
@@ -68,7 +68,7 @@ export default function Teaching() {
                   </Text>
                 </Box>
                 <Box>
-                  <Heading size="xs" textTransform="uppercase">
+                  <Heading size="md" textTransform="uppercase">
                     Labs
                   </Heading>
                   <Text pt="2" fontSize="sm">
@@ -86,7 +86,7 @@ export default function Teaching() {
             <CardBody>
               <Stack divider={<StackDivider />} spacing="4">
                 <Box>
-                  <Heading size="xs" textTransform="uppercase" mb={5}>
+                  <Heading size="md" textTransform="uppercase" mb={5}>
                     Summary
                   </Heading>
                   <UnorderedList spacing={2}>
@@ -107,7 +107,7 @@ export default function Teaching() {
                   </UnorderedList>
                 </Box>
                 <Box>
-                  <Heading size="xs" textTransform="uppercase">
+                  <Heading size="md" textTransform="uppercase">
                     Lecture
                   </Heading>
                   <Text pt="2" fontSize="sm">
@@ -115,7 +115,7 @@ export default function Teaching() {
                   </Text>
                 </Box>
                 <Box>
-                  <Heading size="xs" textTransform="uppercase">
+                  <Heading size="md" textTransform="uppercase">
                     Seminar
                   </Heading>
                   <Text pt="2" fontSize="sm">

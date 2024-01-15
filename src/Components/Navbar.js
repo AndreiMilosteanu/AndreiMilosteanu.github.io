@@ -6,8 +6,10 @@ import {
   Flex,
   Icon,
   IconButton,
+  Image,
   Link,
   Progress,
+  Text,
   useColorMode,
   useColorModeValue,
   useDisclosure,
@@ -19,6 +21,7 @@ import { FaChalkboardTeacher, FaHome } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { MdPermContactCalendar } from "react-icons/md";
 import { NavLink as ReactRouterLink } from "react-router-dom";
+import UBBLogo from "../assets/UBB_logo_small.png";
 
 const AdminLinkItems = [
   { name: "Home", icon: FaHome, path: "/" },
@@ -60,7 +63,6 @@ export default function Navbar({ children }) {
 }
 
 const SidebarContent = ({ onClose, ...rest }) => {
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box
       transition="3s ease"
@@ -92,15 +94,6 @@ const SidebarContent = ({ onClose, ...rest }) => {
           {link.name}
         </NavItem>
       ))}
-      <Button
-        aria-label="Toggle Color Mode"
-        onClick={toggleColorMode}
-        _focus={{ boxShadow: "none" }}
-        w="fit-content"
-        ml={5}
-      >
-        {colorMode === "light" ? <BsMoonStarsFill /> : <BsSun />}
-      </Button>
     </Box>
   );
 };
@@ -142,6 +135,7 @@ const NavItem = ({ icon, path, children, ...rest }) => {
 };
 
 const MobileNav = ({ onOpen, ...rest }) => {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
       <Flex
@@ -150,11 +144,21 @@ const MobileNav = ({ onOpen, ...rest }) => {
         height="20"
         alignItems="center"
         bg={useColorModeValue("white", "gray.900")}
-        // borderBottomWidth="1px"
-        // borderBottomColor={useColorModeValue("gray.200", "gray.700")}
-        justifyContent={{ base: "space-between", md: "flex-end" }}
+        borderBottomWidth="1px"
+        borderBottomColor={useColorModeValue("gray.200", "gray.700")}
+        justifyContent={{ base: "space-between" }}
+        //justifyContent={{ base: "space-between", md: "flex-end" }}
         {...rest}
       >
+        <Image
+          borderRadius="full"
+          boxSize="60px"
+          src={UBBLogo}
+          alt="UBB Logo"
+        />
+        <Text as={"i"} fontSize="3xl">
+          dr. Milosteanu Andrei-Constantin
+        </Text>
         <IconButton
           display={{ base: "flex", md: "none" }}
           onClick={onOpen}
@@ -162,6 +166,15 @@ const MobileNav = ({ onOpen, ...rest }) => {
           aria-label="open menu"
           icon={<FiMenu />}
         />
+        <Button
+          aria-label="Toggle Color Mode"
+          onClick={toggleColorMode}
+          _focus={{ boxShadow: "none" }}
+          w="fit-content"
+          ml={5}
+        >
+          {colorMode === "light" ? <BsMoonStarsFill /> : <BsSun />}
+        </Button>
       </Flex>
       <Progress
         size="xs"

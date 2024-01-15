@@ -29,6 +29,40 @@ export default function PersonalInfo() {
           >
             <Box>
               <Heading as="h2" size="xl">
+                PhD in Computer Science
+              </Heading>
+              <Text>
+                2024-2027{" "}
+                <Link
+                  color="teal.500"
+                  href="https://www.cs.ubbcluj.ro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  "Babeș-Bolyai" University
+                </Link>{" "}
+                Cluj-Napoca, Romania
+              </Text>
+              <Link
+                color="teal.500"
+                href="https://www.cs.ubbcluj.ro/invatamant/programe-academice/masterat/sisteme-informatice-avansate/"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></Link>
+              <Text>
+                Coordinator:{" "}
+                <Link
+                  color="teal.500"
+                  href="https://math.ubbcluj.ro/~csacarea/wordpress/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Conf. Dr. Christian Sacarea
+                </Link>
+              </Text>
+            </Box>
+            <Box>
+              <Heading as="h2" size="xl">
                 Master in Computer Science
               </Heading>
               <Text>
