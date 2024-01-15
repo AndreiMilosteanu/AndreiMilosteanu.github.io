@@ -7,12 +7,14 @@ import {
   Link,
   Text,
   VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import profilePic from "../assets/poza_profil.png";
 
 export default function Contact() {
+  const bgColor = useColorModeValue("white", "gray.800");
   return (
     <Box
       borderWidth="1px"
@@ -20,6 +22,7 @@ export default function Contact() {
       overflow="hidden"
       p={4}
       boxShadow="lg"
+      bgColor={bgColor}
     >
       <Avatar size="2xl" name="Milosteanu Andrei" src={profilePic} mb={4} />
 

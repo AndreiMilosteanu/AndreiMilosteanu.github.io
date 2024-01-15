@@ -156,7 +156,11 @@ const MobileNav = ({ onOpen, ...rest }) => {
           src={UBBLogo}
           alt="UBB Logo"
         />
-        <Text as={"i"} fontSize="3xl" noOfLines={[1, 2]}>
+        <Text
+          as={"i"}
+          fontSize={{ base: "s", md: "xl", lg: "2xl" }}
+          noOfLines={[1, 2]}
+        >
           dr. Milosteanu Andrei-Constantin
         </Text>
         <IconButton

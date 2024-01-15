@@ -9,13 +9,15 @@ import {
   Tabs,
   Text,
   VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "@chakra-ui/react";
 
 export default function PersonalInfo() {
+  const bgColor = useColorModeValue("white", "gray.800");
   return (
-    <Tabs isFitted variant="enclosed">
+    <Tabs isFitted variant="enclosed" borderColor="gray.700" bgColor={bgColor}>
       <TabList mb="1em">
         <Tab>Education</Tab>
         <Tab>Professional Experience</Tab>
@@ -23,7 +25,7 @@ export default function PersonalInfo() {
       <TabPanels>
         <TabPanel>
           <VStack
-            divider={<StackDivider borderColor="gray.200" />}
+            divider={<StackDivider borderColor="gray.700" />}
             spacing={4}
             align="stretch"
           >
@@ -130,7 +132,7 @@ export default function PersonalInfo() {
         <TabPanel>
           <TabPanel>
             <VStack
-              divider={<StackDivider borderColor="gray.200" />}
+              divider={<StackDivider borderColor="gray.700" />}
               spacing={4}
               align="stretch"
             >
